@@ -80,7 +80,25 @@
 											<span class="fl">You Flagged This Banner</span>
 									  <?php }?>
 									  </li>
-									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}"><?php echo  $Banner['Banner']['large_description']?></li>
+
+
+									<!-- Adding photos -->
+
+									<li class="left-img">
+									<a  href="#">
+									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
+								
+									</a>
+									</li>
+									<li class="right-img">
+									<a  href="#">
+									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
+								
+									</a>
+									</li>
+									<br/>
+									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}"><?php echo  "<br/> <br/> <br/> <br/>  " . $Banner['Banner']['large_description']?></li>
+									
 									<li>Location: <?php echo $Banner['State']['name']?>, <?php echo $Banner['Country']['name']?></li>
 								</ul>
 							</div>

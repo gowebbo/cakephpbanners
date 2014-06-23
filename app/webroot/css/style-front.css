@@ -7513,8 +7513,15 @@ td .avatar {width: 20px;height: 20px}
      
 }
 .left-img{
-width:52.1%;float:left;
+width: 47%;float:left;
 z-index:1;
+padding-right: 1px;
+}
+
+.right-img {
+	width : 47%; float:right;
+	z-index:1;
+	padding-left : 1px;
 }
 
 .post .meta-box {
@@ -7523,6 +7530,10 @@ z-index:1 !important;
 
 .left-img img{
 width:100% !Important;
+}
+
+.right-img img {
+	width: 100% !Important;
 }
 
 .right-cont{
