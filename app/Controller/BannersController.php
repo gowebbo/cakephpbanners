@@ -60,6 +60,7 @@ class BannersController extends AppController {
 	 	$condition[]    = "(Banner.status = '1')";	
 		$this->Banner->recursive = 1;
 		$data = $this->paginate('Banner', $condition);
+		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
 		
 		$this->set('savecrit', $savecrit);
 		$this->set('Banners', $data_sorted);
@@ -100,9 +101,10 @@ class BannersController extends AppController {
 		$condition[]    = "(Banner.status = '0')";	
 		$this->Banner->recursive = 1;
 		$data = $this->paginate('Banner', $condition);
+		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
 		 
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data);
+		$this->set('Banners', $data_sorted);
 		
 		
 		

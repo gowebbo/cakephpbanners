@@ -30,7 +30,11 @@ $this->Paginator->options(array(
 							'div'=>false,'label' => false
 						));
 					?>
+					<div class="submit" style="margin-top:10px;">
+						<input onclick="window.location='<?php echo $base_url?>admin/customers/add'" type="button" value="Add" class="curve2 button1">
+					</div>
 				</td>
+				
 			</tr>
 		</table>
 		<?php echo $this->Form->end(); ?>

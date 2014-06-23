@@ -20303,3 +20303,327 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 2014-06-23 13:28:49 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-06-23 13:33:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:33:34 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 13:33:40 Error: [MissingControllerException] Controller class AdmnController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:33:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:33:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:42:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:55:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 13:55:23 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 13:55:23 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:05:48 Error: [MissingActionException] Action CustomersController::admin_customer_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:05:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:05:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:05:54 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:05:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:05:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:14:34 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:14:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:14:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:16:22 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:16:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:16:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:17:10 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:17:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:17:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:17:33 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:17:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:17:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:18:51 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:18:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:18:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:19:56 Error: [MissingActionException] Action CustomersController::admin_add() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 14:19:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 14:19:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:04:56 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:04:59 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:04:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:05:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:05:04 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:05:47 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:05:49 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:05:49 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:05:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:05:54 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:07:05 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:07:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:07:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:07:07 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:08:00 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:08:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:08:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:08:01 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:08:03 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:08:03 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:08:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:08:04 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:08:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:08:05 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:09:32 Error: [MissingActionException] Action CustomersController::index() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:09:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:40 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:40 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:09:45 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:45 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:09:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:09:51 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:08 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:08 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:09 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:12 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:13 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:14 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:14 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:15 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:28 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:29 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-23 15:10:37 Error: [MissingControllerException] Controller class CustomerController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-23 15:10:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -60,6 +60,37 @@ class CustomersController extends AppController {
 		$this->set('customers', $data);
 	}
 
+
+/**
+     * admin_add method
+     *
+     * @return void
+     */
+    public function admin_add()
+    {
+        if ($this->request->is('post')) {
+            $this->Customer->set($this->request->data);
+            if ($this->Customer->validates()) {
+                $this->request->data['Customer']['password'] = Security::hash($this->request->data['Customer']['password'], 'sha256', true);
+				//$this->request->data['Customer']['password'] = Security::hash($this->request->data['Customer']['password'], null, true);
+                $this->Customer->create();
+                if ($this->Customer->save($this->request->data)) {
+                    $this->Session->setFlash('The Customer has been saved', 'default', array('class' => 'success'));
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->request->data['Customer']['password'] = "";
+                    $this->Session->setFlash('The customer could not be saved. Please, try again.', 'default', array('class' => 'error'));
+                }
+            }
+            else
+            {
+                $this->request->data['Customer']['password'] = "";
+                $this->Session->setFlash('The customer could not be saved. Please, try again.', 'default', array('class' => 'error'));
+
+            }
+        }
+    }
+
  /**
  * edit method
  *
