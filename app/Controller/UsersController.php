@@ -30,7 +30,7 @@ class UsersController extends AppController
     {
        
 	   
-	x
+	
 		$condition = array();
 		$savecrit = '';
 		

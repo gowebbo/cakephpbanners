@@ -9,13 +9,13 @@
         <td><?php echo $this->Form->input('username', array('label'=>'','class' => 'curve1 text1')); ?></td>
     </tr>
     <tr>
-        <td>email:<span class="req">*</span></td>
-        <td><?php echo $this->Form->input('email', array('label'=>'','class' => 'curve1 text1')); ?></td>
+        <td>Email:<span class="req">*</span></td>
+        <td><?php echo $this->Form->input('Customer.email', array('label'=>'','class' => 'curve1 text1')); ?></td>
     </tr>
 
     <tr>
         <td>Password:<span class="req">*</span></td>
-        <td><?php echo $this->Form->input('password', array('label'=>'','class' => 'curve1 text1')); ?></td>
+        <td><?php echo $this->Form->input('Customer.password', array('label'=>'','class' => 'curve1 text1')); ?></td>
     </tr>
     <tr>
         <td> <?php
