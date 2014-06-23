@@ -63,6 +63,7 @@
 									<li>
 									  <?php if($flaggedByUser == 'No'){?>
 											<span style="cursor:pointer;" class="fl" onclick="openFlagDiv('<?php echo $Banner['Banner']['id']?>');"> Flag this banner </span>
+
 											<?php echo $this->Form->create('Banner',array('controllers'=>'banners','action'=>'flag_banner','id'=>'form_'.$Banner['Banner']['id'])); ?>
 											<?php echo $this->Form->input('banner_id', array('value'=>$Banner['Banner']['id'],'type'=>'hidden')); ?>
 											
@@ -84,28 +85,25 @@
 
 									<!-- Adding photos -->
 
-									<li class="left-img">
+									<li class="left-img_thumbnail">
 									<a  href="#">
 									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
 								
 									</a>
 									</li>
-									<li class="right-img">
+
+									<li class="right-img_thumbnail">
 									<a  href="#">
 									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
 								
 									</a>
 									</li>
 									<br/>
-									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}"><?php echo  "<br/> <br/> <br/> <br/>  " . $Banner['Banner']['large_description']?></li>
+									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}"><?php echo "<br/> <br/>" . $Banner['Banner']['large_description']?></li>
 									
 									<li>Location: <?php echo $Banner['State']['name']?>, <?php echo $Banner['Country']['name']?></li>
 								</ul>
 							</div>
-							
-						 
-
-					
  	 
  	 </div>
 					</div>
