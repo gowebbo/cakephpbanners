@@ -28,13 +28,13 @@ class Customer extends AppModel {
                 //'allowEmpty' => false,
                 //'required' => false,
                 //'last' => false, // Stop validation after this rule
-                //'on' => 'create', // Limit validation to 'create' or 'update' operations
+                'on' => 'create', // Limit validation to 'create' or 'update' operations
             )
 		),
 		'billing_firstname' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Firstname should not ne empty.',
+				'message' => 'Firstname should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -44,7 +44,7 @@ class Customer extends AppModel {
 		'billing_lastname' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Lastname should not ne empty.',
+				'message' => 'Lastname should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -54,7 +54,7 @@ class Customer extends AppModel {
 		'billing_address' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Billing address should not ne empty.',
+				'message' => 'Billing address should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -64,7 +64,7 @@ class Customer extends AppModel {
 		'billing_city' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Billing city should not ne empty.',
+				'message' => 'Billing city should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -74,7 +74,7 @@ class Customer extends AppModel {
 		'billing_state' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Billing state should not ne empty.',
+				'message' => 'Billing state should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -84,7 +84,7 @@ class Customer extends AppModel {
 		'billing_zipcode' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Billing zipcode should not ne empty.',
+				'message' => 'Billing zipcode should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -94,7 +94,7 @@ class Customer extends AppModel {
 		'billing_phone' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Billing phone should not ne empty.',
+				'message' => 'Billing phone should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -104,7 +104,7 @@ class Customer extends AppModel {
 		'shipping_firstname' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping firstname should not ne empty.',
+				'message' => 'Shipping firstname should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -114,7 +114,7 @@ class Customer extends AppModel {
 		'shipping_lastname' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping lastname should not ne empty.',
+				'message' => 'Shipping lastname should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -124,7 +124,7 @@ class Customer extends AppModel {
 		'shipping_address' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping address should not ne empty.',
+				'message' => 'Shipping address should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -134,7 +134,7 @@ class Customer extends AppModel {
 		'shipping_city' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping city should not ne empty.',
+				'message' => 'Shipping city should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -144,7 +144,7 @@ class Customer extends AppModel {
 		'shipping_state' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping state should not ne empty.',
+				'message' => 'Shipping state should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -154,7 +154,7 @@ class Customer extends AppModel {
 		'shipping_zipcode' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping zipcode should not ne empty.',
+				'message' => 'Shipping zipcode should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -164,7 +164,7 @@ class Customer extends AppModel {
 		'shipping_phone' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Shipping phone should not ne empty.',
+				'message' => 'Shipping phone should not be emtpy.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

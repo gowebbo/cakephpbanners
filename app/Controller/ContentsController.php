@@ -125,25 +125,25 @@ class ContentsController  extends AppController {
 				$this->Content->validationErrors[] = "Please enter valid email.";
 			}
 			if(empty($this->request->data['Content']['billing_firstname']) || $this->request->data['Content']['billing_firstname']=='First Name'){
-				$this->Content->validationErrors[] = "Firstname should not ne empty.";
+				$this->Content->validationErrors[] = "Firstname should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_lastname']) || $this->request->data['Content']['billing_lastname']=='Last Name'){
-				$this->Content->validationErrors[] = "Lastname should not ne empty.";
+				$this->Content->validationErrors[] = "Lastname should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_address']) || $this->request->data['Content']['billing_address']=='Address'){
-				$this->Content->validationErrors[] = "Address should not ne empty.";
+				$this->Content->validationErrors[] = "Address should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_city']) || $this->request->data['Content']['billing_city']=='City'){
-				$this->Content->validationErrors[] = "City should not ne empty.";
+				$this->Content->validationErrors[] = "City should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_state'])){
-				$this->Content->validationErrors[] = "State should not ne empty.";
+				$this->Content->validationErrors[] = "State should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_zipcode']) || $this->request->data['Content']['billing_zipcode']=='Postal Code'){
-				$this->Content->validationErrors[] = "Zipcode should not ne empty.";
+				$this->Content->validationErrors[] = "Zipcode should not be emtpy.";
 			}
 			if(empty($this->request->data['Content']['billing_phone']) || $this->request->data['Content']['billing_city']=='Phone'){
-				$this->Content->validationErrors[] = "Phone should not ne empty.";
+				$this->Content->validationErrors[] = "Phone should not be emtpy.";
 			}
 			
 			

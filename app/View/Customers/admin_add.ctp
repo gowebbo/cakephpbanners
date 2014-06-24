@@ -3,11 +3,6 @@
 
 <?php echo $this->Form->create('Customer'); ?>
 <table cellspacing="0" cellpadding="0" class="table1">
-
-    <tr>
-        <td style="width:100px;">User Name:<span class="req">*</span></td>
-        <td><?php echo $this->Form->input('username', array('label'=>'','class' => 'curve1 text1')); ?></td>
-    </tr>
     <tr>
         <td>Email:<span class="req">*</span></td>
         <td><?php echo $this->Form->input('Customer.email', array('label'=>'','class' => 'curve1 text1')); ?></td>
@@ -16,6 +11,10 @@
     <tr>
         <td>Password:<span class="req">*</span></td>
         <td><?php echo $this->Form->input('Customer.password', array('label'=>'','class' => 'curve1 text1')); ?></td>
+    </tr>
+    <tr>
+        <td> Verify: <span class="req"> * </span></td>
+        <td> <?php echo $this->Form->input('Customer.verify', array('default' => '1', 'readonly' => 'true' , 'label' => '', 'class' => 'curve1 text1')); ?> </td>
     </tr>
     <tr>
         <td> <?php

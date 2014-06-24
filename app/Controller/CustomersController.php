@@ -254,47 +254,47 @@ class CustomersController extends AppController {
 			
 			
 			if(empty($this->request->data['Customer']['billing_firstname']) || $this->request->data['Customer']['billing_firstname']=='First Name'){
-				$this->Customer->validationErrors[] = "Firstname should not ne empty.";
+				$this->Customer->validationErrors[] = "Firstname should not be empty.";
 			}
 			if(empty($this->request->data['Customer']['billing_lastname']) || $this->request->data['Customer']['billing_lastname']=='Last Name'){
-				$this->Customer->validationErrors[] = "Lastname should not ne empty.";
+				$this->Customer->validationErrors[] = "Lastname should not be empty.";
 			}
 			/*if(empty($this->request->data['Customer']['billing_address']) || $this->request->data['Customer']['billing_address']=='Address'){
-				$this->Customer->validationErrors[] = "Billing address should not ne empty.";
+				$this->Customer->validationErrors[] = "Billing address should not be emtpy.";
 			}
 			if(empty($this->request->data['Customer']['billing_city']) || $this->request->data['Customer']['billing_city']=='City'){
-				$this->Customer->validationErrors[] = "Billing city should not ne empty.";
+				$this->Customer->validationErrors[] = "Billing city should not be emtpy.";
 			}
 			if(empty($this->request->data['Customer']['billing_state'])){
-				$this->Customer->validationErrors[] = "Billing state should not ne empty.";
+				$this->Customer->validationErrors[] = "Billing state should not be emtpy.";
 			}
 			if(empty($this->request->data['Customer']['billing_zipcode']) || $this->request->data['Customer']['billing_zipcode']=='Postal Code'){
-				$this->Customer->validationErrors[] = "Billing zipcode should not ne empty.";
+				$this->Customer->validationErrors[] = "Billing zipcode should not be emtpy.";
 			}else{
 				if(!preg_match("/^[0-9]{5}$/", $this->request->data['Customer']['billing_zipcode'])) {
 					$this->Customer->validationErrors[] = "The Billing postal code must be a 5-digit number.";
 				} 
 			}
 			if(empty($this->request->data['Customer']['billing_phone']) || $this->request->data['Customer']['billing_city']=='Phone'){
-				$this->Customer->validationErrors[] = "Billing phone should not ne empty.";
+				$this->Customer->validationErrors[] = "Billing phone should not be emtpy.";
 			}
 			if($this->request->data['Customer']['same_as_billing_address']!=1){
 			
 				if(empty($this->request->data['Customer']['shipping_firstname']) || $this->request->data['Customer']['shipping_firstname']=='First Name'){
-					$this->Customer->validationErrors[] = "Shipping firstname should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping firstname should not be emtpy.";
 				}
 				if(empty($this->request->data['Customer']['shipping_lastname']) || $this->request->data['Customer']['shipping_lastname']=='Last Name'){
-					$this->Customer->validationErrors[] = "Shipping lastname should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping lastname should not be emtpy.";
 				}
 				if(empty($this->request->data['Customer']['shipping_address']) || $this->request->data['Customer']['shipping_address']=='Address'){
-					$this->Customer->validationErrors[] = "Shipping address should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping address should not be emtpy.";
 				}
 				if(empty($this->request->data['Customer']['shipping_city']) || $this->request->data['Customer']['shipping_city']=='City'){
-					$this->Customer->validationErrors[] = "Shipping city should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping city should not be emtpy.";
 				}
 				
 				if(empty($this->request->data['Customer']['shipping_zipcode']) || $this->request->data['Customer']['shipping_zipcode']=='Postal Code'){
-					$this->Customer->validationErrors[] = "Shipping zipcode should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping zipcode should not be emtpy.";
 				}else{
 					if(!preg_match("/^[0-9]{5}$/", $this->request->data['Customer']['shipping_zipcode'])) {
 						$this->Customer->validationErrors[] = "The shipping postal code must be a 5-digit number.";
@@ -302,7 +302,7 @@ class CustomersController extends AppController {
 				}
 				
 				if(empty($this->request->data['Customer']['shipping_state'])){
-					$this->Customer->validationErrors[] = "Shipping state should not ne empty.";
+					$this->Customer->validationErrors[] = "Shipping state should not be emtpy.";
 				}
 			}else{
 				$this->request->data['Customer']['shipping_firstname'] = $this->request->data['Customer']['billing_firstname'];
