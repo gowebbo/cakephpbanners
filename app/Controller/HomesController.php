@@ -23,13 +23,13 @@ class HomesController extends AppController
     /**
      * index method
      *
-     * @return void
-     */
+	* @return void
+*/
     public function index()
     {
 		 $this->loadModel('Banner');
 		 $this->loadModel('SubCategory');
-		/*$this->loadModel('Product');
+		/*																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														$this->loadModel('Product');
 		$this->loadModel('Content');		
 		$condition = array();
 		$condition[] = 'Product.active = 0 && Product.featured = 1';

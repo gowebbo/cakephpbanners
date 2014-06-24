@@ -489,15 +489,32 @@ class BannersController extends AppController {
 				//main image upload
 				if($this->data['Banner']['image']['error']!='4'){
 					$fileArr1    = $this->data['Banner']['image'];
+					$fileArr2 	 = $this->data['Banner']['image1'];
+					$fileArr3 	 = $this->data['Banner']['image2'];
 					
-					$randNumImg1 = time();
-					$farr1 = explode(".", $fileArr1['name']);				
+					$randNumImg1 = time() + rand(0,1000);
+					$randNumImg2 = time() + rand(0,1000);
+					$randNumImg3 = time() + rand(0,1000);
+
+					$farr1 = explode(".", $fileArr1['name']);
+					$farr2 = explode(".", $fileArr2['name']);
+					$farr3 = explode(".", $fileArr3['name']);
+
 					$ext1  = $farr1[(count($farr1)-1)];
+					$ext2  = $farr2[(count($farr2)-1)];
+					$ext3  = $farr3[(count($farr3)-1)];
+
 					$coverPhoto1   = $randNumImg1."2.".$ext1;
+					$coverPhoto2   = $randNumImg2."3.".$ext2;
+					$coverPhoto3   = $randNumImg3."4.".$ext3;
+
 					$file1 = $this->Upload->upload($fileArr1, $img_dest, $coverPhoto1, null, $allowed); 
-					
+					$file2 = $this->Upload->upload($fileArr2, $img_dest, $coverPhoto2, null, $allowed);
+					$file3 = $this->Upload->upload($fileArr3, $img_dest, $coverPhoto3, null, $allowed);
 					//$imageactualSize = getimagesize(BANNER_DIRECTORY.'/'.$coverPhoto1); 
 					$this->request->data['Banner']['image'] = $coverPhoto1; 
+					$this->request->data['Banner']['image1'] = $coverPhoto2;
+					$this->request->data['Banner']['image2'] = $coverPhoto3;
 					
 					/*if($imageactualSize[0] > 295 && $imageactualSize[1] > 205){
 						if($ext1 == 'png'){

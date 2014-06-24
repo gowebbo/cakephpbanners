@@ -40,7 +40,7 @@
  * and log errors with CakeLog when debug = 0.
  *
  * Options:
- *
+ *	
  * - `handler` - callback - The callback to handle errors. You can set this to any callback type,
  *    including anonymous functions.
  * - `level` - int - The level of errors you are interested in capturing.

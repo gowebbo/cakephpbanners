@@ -61,7 +61,16 @@
 									 <?php echo $this->Form->input('image', array('label'=>'','type' => 'file','class' => 'span12')); ?>
 									<font size="1px;">Image should be greater then 292x205</font>
 								  </div>
-								  
+								  <label class="control-label">Upload Image 1</label>
+								  <div class="controls">
+									 <?php echo $this->Form->input('image1', array('label'=>'','type' => 'file','class' => 'span12')); ?>
+									<font size="1px;">Image should be greater then 292x205</font>
+								  </div>
+								  <label class="control-label">Upload Image 2</label>
+								  <div class="controls">
+									 <?php echo $this->Form->input('image2', array('label'=>'','type' => 'file','class' => 'span12')); ?>
+									<font size="1px;">Image should be greater then 292x205</font>
+								  </div>
 									</div>
 									
 								<div class="control-group" id="image_upload_from_sample">
@@ -157,6 +166,15 @@
                                  <?php
 									$options=array('0'=>'No','1'=>'Yes');
 									echo $this->Form->input('pause',array('type'=>'select','label' => '', 'options' => $options, 'style' =>'height:30px; ')); 
+								?>
+                              </div>
+                          		</div>
+                          	<div class="control-group">
+                              <label class="control-label">Premium Banner(Only for 99 cents)</label>
+                              <div class="controls">
+                                 <?php
+									$options=array('0'=>'No','1'=>'Yes');
+									echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options, 'style' =>'height:30px; ')); 
 								?>
                               </div>
                            </div>

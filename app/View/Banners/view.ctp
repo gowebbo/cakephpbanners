@@ -87,14 +87,14 @@
 									
 									<li class="left-img_thumbnail">
 									<a  href="#">
-									<img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
+									<img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image1'].'&w=286&h=192'?>"  />
 								
 									</a>
 									</li>
 
 									<li class="left-img_thumbnail">
 									<a  href="#">
-									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
+									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image2'].'&w=286&h=192'?>"  />
 								
 									</a>
 									</li>
