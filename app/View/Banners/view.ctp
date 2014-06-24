@@ -84,6 +84,13 @@
 
 
 									<!-- Adding photos -->
+									
+									<li class="left-img_thumbnail">
+									<a  href="#">
+									<img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
+								
+									</a>
+									</li>
 
 									<li class="left-img_thumbnail">
 									<a  href="#">
@@ -91,13 +98,7 @@
 								
 									</a>
 									</li>
-
-									<li class="right-img_thumbnail">
-									<a  href="#">
-									<img  src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"  />
-								
-									</a>
-									</li>
+									<?php echo "<br/>"; ?>
 									<br/>
 									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}"><?php echo "<br/> <br/>" . $Banner['Banner']['large_description']?></li>
 									

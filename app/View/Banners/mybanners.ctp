@@ -118,10 +118,7 @@
 					</div>  
 					<?php }?> 
 			
- 
- 	 
- 
- 	 
+
  
  	 
 					<div class="pagination-tt clearfix">
