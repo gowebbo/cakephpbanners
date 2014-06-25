@@ -276,6 +276,8 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+
 //define("MYSTOREWEBROOTURL","http://localhost/psraviolistore/");
 define("PRODUCT_DIRECTORY", WWW_ROOT."files/products/");
 define("BANNER_DIRECTORY", WWW_ROOT."files/gallery/");
@@ -284,5 +286,7 @@ define("WEBSITE_NAME", "Website Name");
 
 define("ADMIN_EMAIL", "test@test.in");
 define("FROM_EMAIL", "test@test.in");
+
+
 
 

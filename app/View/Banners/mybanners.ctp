@@ -46,6 +46,7 @@
 			 }
 			 </script>
 					<?php foreach($Banners as $Banner){?>
+					<?php if($Banner['is_premium'] == 0) { ?>
 					 <div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
@@ -115,7 +116,79 @@
 							 <?php }?> 
 						</div>
 
-					</div>  
+					</div> 
+					<?php }else{?>
+						<div class="post">
+						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
+						<div  class="meta-box">
+							<div class="left-img">
+								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
+							</div>
+							<div class="right-cont">
+								<a href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><h6 class="h1"><?php echo $this->Text->truncate($Banner['Banner']['title'], 20, array('ending' => ''))?></h6> </a>
+								<ul>   
+									<li style="color: #888888; font-family: Carrois; font-size: 13px;line-height: 30px;list-style: none outside none;}">Post Date: <?php echo $Banner['Banner']['created']?>&nbsp;</li>
+									<?php 
+										$flaggedByUser = 'No';
+										if($Banner['FlaggedBanner']){
+											foreach($Banner['FlaggedBanner'] as $FlaggedBanner){
+												if($FlaggedBanner['banner_id'] == $Banner['Banner']['id'] && $FlaggedBanner['customer_id'] == $loggedInUserId){
+													$flaggedByUser = 'Yes';
+													break;
+												}
+											}
+										}
+										 
+									?>
+									<li>
+									  <br />
+									  </li>
+									<li style="color: #888888; font-family: OpenSansRegular; font-size: 13px;line-height: 30px;list-style: none outside none;}">
+									<?php 
+										 
+										if(strlen($Banner['Banner']['description'])>60){
+											echo $this->Text->truncate($Banner['Banner']['description'], 60, array('ending' => '...')).'<br><a href="'.$base_url.'banners/view/'.$Banner['Banner']['id'].'">Try it now click here</a>'; 
+										}else{
+											echo $Banner['Banner']['description'];
+										}
+										?>
+									   <li>
+						 
+									<span class="fl">
+									<?php echo $this->Html->link(__('Edit'), array('action' => 'upload', $Banner['Banner']['id'])); ?>  
+					|
+									<?php echo $this->Form->postLink(__('Remove'), array('action' => 'delete', $Banner['Banner']['id']), null, __('Are you sure you want to delete # %s?', $Banner['Banner']['title'])); ?>
+					
+									</span>
+							   
+							  </li>
+								</ul>
+									<div class="price">
+									<?php 
+									if($Banner['Banner']['off_percentage']>0){
+									$percentage =  $Banner['Banner']['price'] * $Banner['Banner']['off_percentage']/100;
+									$newPrice = $Banner['Banner']['price'] - $percentage;
+
+									?>
+									<div class="orgprice"> Org price <br/><span  style="color:#808080;text-decoration: line-through;"> <span style="color:#A8353D">
+									$<?php echo number_format ($Banner['Banner']['price'],2)?> </span></span></div>
+									<div class="orgprice kbs"> Kbs Deal <br/>
+									$<?php echo number_format ($newPrice,2)?> </div>
+									<?php }else{?>
+									<div class="orgprice"> Org price <br/><span  style="color:#808080;"> <span style="color:#A8353D">
+									$<?php echo number_format ($Banner['Banner']['price'],2)?> </span></span></div>
+									<?php }?>
+									</div>
+							</div>
+							 <?php if($Banner['Banner']['off_percentage']>0){?>
+								<div   class="offer"  >
+									<?php echo $Banner['Banner']['off_percentage']?>%<br> off 
+								</div>
+							 <?php }?> 
+						</div>
+
+					</div>
+					<?php } ?> 
 					<?php }?> 
 			
 

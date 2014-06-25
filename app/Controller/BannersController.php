@@ -476,7 +476,7 @@ class BannersController extends AppController {
 		if(!empty($this->data)){
 			 
 			 
-			if($this->data['Banner']['template_banner']==0){ //if client upload directly from compluter
+			if($this->data['Banner']['template_banner']==0){ //if client upload directly from computer
 				$result = $this->dimensionsee($this->data['Banner'],292,205);
 			 
 				if($result){
@@ -486,7 +486,7 @@ class BannersController extends AppController {
 				$img_dest = BANNER_DIRECTORY.'/';  	
 				
 				$allowed = array('image/jpeg', 'image/jpg',  'image/pjpeg', 'image/jpg', 'image/gif', 'image/png', 'image/bmp');
-				//main image upload
+				//main  and extra two images upload
 				if($this->data['Banner']['image']['error']!='4'){
 					$fileArr1    = $this->data['Banner']['image'];
 					$fileArr2 	 = $this->data['Banner']['image1'];
@@ -641,6 +641,8 @@ class BannersController extends AppController {
 		$banner_data = $this->TemplateBanner->find('all');	
 		$bannerList  = Set::combine($banner_data, '{n}.TemplateBanner.image', '{n}.TemplateBanner.title');	  
 		$this->set('bannerList', $bannerList);
+
+		// implementing the premium functionality
 		 
 	}
 	
