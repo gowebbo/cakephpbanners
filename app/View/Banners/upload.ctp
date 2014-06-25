@@ -169,15 +169,17 @@
 								?>
                               </div>
                           		</div>
+                          	
                           	<div class="control-group">
                               <label class="control-label">Premium Banner(Only for 99 cents)</label>
                               <div class="controls">
                                  <?php
 									$options=array('0'=>'No','1'=>'Yes');
-									echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options, 'style' =>'height:30px; ')); 
+									echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options,'style' =>'height:30px; ')); 
 								?>
                               </div>
                            </div>
+                       	
                            <div class="control-group">
                               <label class="control-label"></label>
                               <div class="controls">

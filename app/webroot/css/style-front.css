@@ -7613,6 +7613,17 @@ width:43%;float:right;
     color: #1B9CB1;
     font-weight: bold;
 }
+
+.pre {
+	background-image: url("../img/pre.png");
+	width: 50px;
+	height: 99px;
+	position: absolute;
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+
+
+}
 .offer {
     background-image: url("../img/off.png");
     font-size: 18px;
