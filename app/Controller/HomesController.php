@@ -224,13 +224,13 @@ class HomesController extends AppController
 		 }else{
 			 $this->set('offset', $offset+1);
 		 }
-		
+		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));	
 		 
 		$this->set('total', $total);
 		$this->set('sub_cat_name', $sub_cat_name);
 		$this->set('sub_cat_id', $sub_cat_id);
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data);
+		$this->set('Banners', $data_sorted);
 		$this->set('loggedInUserId',$this->Auth->user('id'));
     }
 

@@ -38,7 +38,7 @@
 	Router::connect('/disclaimer', array('controller' => 'contents', 'action' => 'page','disclaimer'));
 	Router::connect('/privacy-policy', array('controller' => 'contents', 'action' => 'page','privacy-policy'));
 	Router::connect('/terms-conditions', array('controller' => 'contents', 'action' => 'page','terms-conditions'));
-	
+	/* Paypal IPN plugin */
   
 	
 /**
@@ -52,3 +52,4 @@
  * the built-in default routes.
  */
 	require CAKE . 'Config' . DS . 'routes.php';
+

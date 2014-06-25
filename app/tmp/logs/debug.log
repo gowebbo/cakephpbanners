@@ -54078,3 +54078,167 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 [main] - APP/webroot/index.php, line 96
 
+2014-06-25 15:36:40 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 217]
+Trace:
+include - APP/View/Banners/upload.ctp, line 217
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:37:16 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:37:16 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:37:27 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 217]
+Trace:
+include - APP/View/Banners/upload.ctp, line 217
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:44:32 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 217]
+Trace:
+include - APP/View/Banners/upload.ctp, line 217
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:44:58 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:44:58 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:45:51 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:46:07 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:46:08 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 15:46:12 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 16:42:58 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 217]
+Trace:
+include - APP/View/Banners/upload.ctp, line 217
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 16:43:16 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-06-25 16:43:16 Notice: Notice (8): Array to string conversion in [/var/www/kevin/lib/Cake/Model/Datasource/DboSource.php, line 981]
+Trace:
+implode - [internal], line ??
+DboSource::create() - CORE/Cake/Model/Datasource/DboSource.php, line 981
+Model::save() - CORE/Cake/Model/Model.php, line 1705
+BannersController::upload() - APP/Controller/BannersController.php, line 576
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 488
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+

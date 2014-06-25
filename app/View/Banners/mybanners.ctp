@@ -121,7 +121,7 @@
 						<div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
-							<div class ="pre">
+							<div class ="prem">
 							</div>
 							<div class="left-img">
 								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
