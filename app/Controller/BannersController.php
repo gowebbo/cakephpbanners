@@ -560,11 +560,16 @@ class BannersController extends AppController {
 					 
 				} else{
 					$BannerDetail = $this->Banner->find("first", array('conditions'=>array('Banner.id='.$id)));
+					//$this->request->data['Banner']['image1'] = null;
+					//$this->request->data['Banner']['image2'] = null;
 					$this->request->data['Banner']['image']=$BannerDetail['Banner']['image'];
 					
 				}
 			}else{
-				$this->request->data['Banner']['image'] = $this->data['Banner']['template_image']; 
+				$this->request->data['Banner']['image'] = $this->data['Banner']['template_image'];
+				$this->request->data['Banner']['image1'] = null;
+				$this->request->data['Banner']['image2'] = null;
+
 			}
 			
 			//pr($this->request->data);

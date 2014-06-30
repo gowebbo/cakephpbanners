@@ -97,7 +97,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller
 
 {
-
+	
     var $components = array(
 
         'Session','Auth'
@@ -141,7 +141,7 @@ class AppController extends Controller
 			$this->Auth->loginError = __('Invalid e-mail / password combination.  Please try again');
 
 			$this->Auth->autoRedirect = true;
-
+			
 			
 
 			$this->set('userData', "");
@@ -256,11 +256,6 @@ class AppController extends Controller
 
 	}
 
-
-
-	     
-
-	
 
 	 	public function generateRandStr($length){
 				$randstr = "";

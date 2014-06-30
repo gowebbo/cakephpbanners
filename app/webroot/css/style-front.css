@@ -7618,9 +7618,10 @@ width:43%;float:right;
 	background-image: url("../img/prem.png");
 	width: 25px;
 	height: 74px;
+	left: 5px;
 	position: absolute;
-	opacity: 0.9;
-    filter: alpha(opacity=90); /* For IE8 and earlier */
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
 
 
 }

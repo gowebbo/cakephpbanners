@@ -123,3 +123,4 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 Cache::config('default', array('engine' => 'File', 'mask' => 0666));
+CakePlugin::load('PaypalIpn');
