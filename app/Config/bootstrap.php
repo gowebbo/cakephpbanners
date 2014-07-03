@@ -85,6 +85,8 @@
  */
 Cache::config('default', array('engine' => 'File'));
 
+CakePlugin::load('PaypalIpn');
+
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
@@ -123,4 +125,3 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 Cache::config('default', array('engine' => 'File', 'mask' => 0666));
-CakePlugin::load('PaypalIpn');

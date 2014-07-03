@@ -98,6 +98,8 @@ class AppController extends Controller
 
 {
 	
+	public $helpers = array('Session', 'Html','Form','PaypalIpn.Paypal');
+
     var $components = array(
 
         'Session','Auth'
@@ -271,6 +273,14 @@ class AppController extends Controller
 				}
 				return $randstr;
 			}
+
+	function afterPaypalNotification($txnId){
+    ClassRegistry::init('PaypalIpn.InstantPaymentNotification')->email(array(
+        'id' => $txnId,
+        'subject' => 'Thanks!',
+        'message' => 'Thank you for the transaction!'
+    ));
+}
 }
 
 

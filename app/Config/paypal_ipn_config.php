@@ -29,16 +29,16 @@ class PaypalIpnConfig {
  * Test settings to test with using a sandbox paypal account.
  */
 	  var $test = array(
-		'business'      => 'sandbox_email@paypal.com',         // 'live_email@paypal.com', //Your Paypal email account
+		'business'      => 'nitish-facilitator@gowebbo.com',        // 'live_email@paypal.com', //Your Paypal email account
 		'server'        => 'https://www.sandbox.paypal.com',        // Main paypal server.
-		'notify_url'    => 'http://test.yoursite.com/paypal_ipn/process',
+		'notify_url'    => 'http://gowebbo.com',
                                                             // 'http://test.yoursite.com/paypal_ipn/process',
                                                             // Notify_url... set this to the process path of your
                                                             // paypal_ipn::instant_payment_notification::process action
 		'currency_code' => 'USD',                           // Currency
 		'lc'            => 'US',                            // Locality
-		'item_name'     => 'Paypal_IPN',                    // Default item name.
-		'amount'        => '15.00',                         // Default item amount.
+		'item_name'     => 'Banner Premium',                // Default item name.
+		'amount'        => '0.99',                         // Default item amount.
 		'encrypt'       => false,                           // Set to true to enable encryption
 	);
 

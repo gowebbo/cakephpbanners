@@ -54495,3 +54495,291 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 [main] - APP/webroot/index.php, line 96
 
+2014-07-03 11:21:44 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:21:45 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 218]
+Trace:
+include - APP/View/Banners/upload.ctp, line 218
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:22:33 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 218]
+Trace:
+include - APP/View/Banners/upload.ctp, line 218
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:39:01 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 225]
+Trace:
+include - APP/View/Banners/upload.ctp, line 225
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:39:23 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 225]
+Trace:
+include - APP/View/Banners/upload.ctp, line 225
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:41:51 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 231]
+Trace:
+include - APP/View/Banners/upload.ctp, line 231
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:47:01 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 232]
+Trace:
+include - APP/View/Banners/upload.ctp, line 232
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:47:43 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 232]
+Trace:
+include - APP/View/Banners/upload.ctp, line 232
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:49:31 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 232]
+Trace:
+include - APP/View/Banners/upload.ctp, line 232
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:54:09 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 232]
+Trace:
+include - APP/View/Banners/upload.ctp, line 232
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 11:57:33 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 239]
+Trace:
+include - APP/View/Banners/upload.ctp, line 239
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:07:46 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 259]
+Trace:
+include - APP/View/Banners/upload.ctp, line 259
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:12:51 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 264]
+Trace:
+include - APP/View/Banners/upload.ctp, line 264
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:13:33 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 264]
+Trace:
+include - APP/View/Banners/upload.ctp, line 264
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:13:51 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 265]
+Trace:
+include - APP/View/Banners/upload.ctp, line 265
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:14:17 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 265]
+Trace:
+include - APP/View/Banners/upload.ctp, line 265
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:24:04 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 274]
+Trace:
+include - APP/View/Banners/upload.ctp, line 274
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:34:16 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 274]
+Trace:
+include - APP/View/Banners/upload.ctp, line 274
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 13:53:21 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 274]
+Trace:
+include - APP/View/Banners/upload.ctp, line 274
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 14:00:17 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 275]
+Trace:
+include - APP/View/Banners/upload.ctp, line 275
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:02:57 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 275]
+Trace:
+include - APP/View/Banners/upload.ctp, line 275
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:17:57 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:18:28 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 276]
+Trace:
+include - APP/View/Banners/upload.ctp, line 276
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:24:41 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 278]
+Trace:
+include - APP/View/Banners/upload.ctp, line 278
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:25:40 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 278]
+Trace:
+include - APP/View/Banners/upload.ctp, line 278
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-03 15:27:25 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 280]
+Trace:
+include - APP/View/Banners/upload.ctp, line 280
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+

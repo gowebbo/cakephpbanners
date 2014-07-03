@@ -1,3 +1,18 @@
+<script type="text/javascript">
+$(document).ready(function(){
+		    $('#paypalbutton').hide();
+		});
+
+function payPaypal(value) {
+		if (value =='1' ) {
+			$('#paypalbutton').show();
+		}
+		else if(value == '0') {
+			$('#paypalbutton').hide();
+		}
+	}
+</script>
+
 
 <div class="page-content">
 			<div class="row official-shop checkout clearfix mbs">
@@ -18,7 +33,7 @@
 				<?php }?>
             <div class="block-body">
 					 
-							 <?php echo $this->Form->create('Banner',array('class'=>'form-horizontal','enctype'=>'multipart/form-data')); ?>
+							 <?php echo $this->Form->create('Banner',array('class'=>'form-horizontal','enctype'=>'multipart/form-data', )); ?>
                               <?php echo $this->Form->input('Banner.id'); ?>
                            
 								 <div class="control-group">
@@ -84,7 +99,7 @@
 									?>
 								  </div>
 								  
-									</div>
+								</div>
 									
 									<?php if(!$add_type && !empty($this->request->data['Banner']['image'])){?>
 										<div class="control-group">
@@ -174,12 +189,45 @@
                               <label class="control-label">Premium Banner(Only for 99 cents)</label>
                               <div class="controls">
                                  <?php
-									$options=array('0'=>'No','1'=>'Yes');
-									echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options,'style' =>'height:30px; ')); 
+									$options_one=array('0'=>'No','1'=>'Yes');
+									echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options_one,'style' =>'
+										height:30px;','empty'=>"Select Payment Through paypal",'onchange'=>'payPaypal(this.value);'));
 								?>
                               </div>
                            </div>
-                       	
+
+
+                           <div id="paypalbutton" class="control-group" >
+                           <label class="control-label">Pay Now</label>
+                           <div class="controls">
+                        		<!--
+                           		<?php echo $this->Paypal->button('Pay Now', array('test' => true, 'amount' => '12.00', 'item_name' => 'test item')); ?>
+                    		-->
+
+
+                           <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="MNH8M7ZBRV3GW">
+							<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+                           	</div>
+                           </div>
+
+
+
+
+
+                           	<!-- 
+                            <form  action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="2MXGBLB8JGW7W">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+							 </div>
+                        	</div>
+                       	-->
                            <div class="control-group">
                               <label class="control-label"></label>
                               <div class="controls">
@@ -205,6 +253,10 @@
 		</div>
 		
 		<script>
+
+
+		
+
 	function selectBannerType(value){
 		if(value=='0'){
 			$('#image_upload_from_computer').show();
@@ -214,6 +266,17 @@
 			$('#image_upload_from_sample').show();
 		}
 	}
+
+	function payPaypal(value) {
+		if (value =='1' ) {
+			$('#paypalbutton').show();
+		}
+		else if(value == '0') {
+			$('#paypalbutton').hide();
+		}
+	}
+
+
 	window.addEventListener("load", function() { selectBannerType('<?php echo $this->request->data['Banner']['template_banner']?>'); }, false);
 	
    <?php if(!empty($this->request->data['Banner']['category_id'])){?>
