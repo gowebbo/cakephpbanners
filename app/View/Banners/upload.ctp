@@ -174,6 +174,8 @@ function payPaypal(value) {
 								</div>
                               </div> 
 							  
+
+							<!--							  
 							  <div class="control-group">
                               <label class="control-label">Active Banner (Click yes to make banner live)</label>
                               <div class="controls">
@@ -184,7 +186,7 @@ function payPaypal(value) {
 								?>
                               </div>
                           		</div>
-                          	
+                          	-->
                           	<div class="control-group">
                               <label class="control-label">Premium Banner(Only for 99 cents)</label>
                               <div class="controls">
@@ -196,15 +198,15 @@ function payPaypal(value) {
                               </div>
                            </div>
 
-
+                           <!--
                            <div id="paypalbutton" class="control-group" >
                            <label class="control-label">Pay Now</label>
                            <div class="controls">
-                        		<!--
+                        		
                            		<?php echo $this->Paypal->button('Pay Now', array('test' => true, 'amount' => '12.00', 'item_name' => 'test item')); ?>
                     		-->
 
-
+                    		<!--
                            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_s-xclick">
 							<input type="hidden" name="hosted_button_id" value="MNH8M7ZBRV3GW">
@@ -213,7 +215,7 @@ function payPaypal(value) {
 							</form>
                            	</div>
                            </div>
-
+							-->
 
 
 
