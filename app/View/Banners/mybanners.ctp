@@ -46,7 +46,8 @@
 			 }
 			 </script>
 					<?php foreach($Banners as $Banner){?>
-					<?php if($Banner['Banner']['is_premium'] == 0) { ?>
+					<?php if($Banner['Banner']['is_premium'] == 0 and (time() - strtotime($Banner['Banner']['created']) <= 5*24*60*60)){ ?>
+					<?php echo (time() - strtotime($Banner['Banner']['created'])) ?>
 					 <div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
@@ -117,7 +118,8 @@
 						</div>
 
 					</div> 
-					<?php }else{?>
+					<?php }else if (time() - strtotime($Banner['Banner']['created']) <= 14*24*60*60){?>
+						<?php echo (time() - strtotime($Banner['Banner']['created'])) ?>
 						<div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">

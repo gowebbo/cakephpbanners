@@ -22,6 +22,37 @@ class BannersController extends AppController {
         $this->layout = 'admin';
     }
 
+
+
+// Implementing the function to check for premium and non-premium banners
+
+/**
+* calculating the time elasped 
+* @return bool 
+*/
+
+	protected function checktime($id = null){
+		$data = $this->Banner->findbyId('$id');
+		$value = false;
+		$time = strtotime($this->$data['Banner']['created']);
+		if ($this->data['banner']['is_premium'] == 0) {
+			if ($time - time() < 5*24*60*60) {
+				$value = true;
+			}
+		} else if ($this->data['banner']['is_premium'] == 1) {
+			if ($time - time() < 14*24*60*60) {
+				$value = true;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
 /**
  * index method
  *
@@ -102,7 +133,7 @@ class BannersController extends AppController {
 		$this->Banner->recursive = 1;
 		$data = $this->paginate('Banner', $condition);
 		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
-		 
+		
 		$this->set('savecrit', $savecrit);
 		$this->set('Banners', $data_sorted);
 		
@@ -155,6 +186,35 @@ class BannersController extends AppController {
 		
 		
 	}
+
+/** 
+*
+* Checks weather the banners are old enough to be turned back to non-premium
+* and change the status to 0 , in case of non-premium
+* 
+* @return void 
+*/
+
+   protected function check_status(){
+   	 $data = $this->Banner->find('all');
+   	 foreach ($data as $Banners) {
+   	 	if ($Banners['Banner']['is_premium'] == 0) {
+   	 		if ((time() - strtotime($Banners['Banner']['created'])) > 5*24*60*60) {
+   	 			$this->Banner->updateAll(
+				    array('Banner.status' => 0));
+   	 		}
+   	 	else if ($Banners['Banner']['is_premium'] == 1) {
+   	 		if ((time() - strtotime($Banners['Banner']['created'])) > 14*24*60*60) {
+   	 			$this->Banner->updateAll(
+				    array('Banner.status' => 0));
+   	 		}
+
+   	 	}
+   	 	} 
+   	 }
+   }
+
+
 /**
  * add method
  *
@@ -329,9 +389,11 @@ class BannersController extends AppController {
 		 
 		//pr($Banner);
 		//die;
-			$this->set('loggedInUserId',$this->Auth->user('id'));
-		 $this->set('Banner', $Banner);	
+		$this->set('loggedInUserId',$this->Auth->user('id'));
+		$this->set('Banner', $Banner);	
 	}
+
+
 	function admin_getsubcategory($id){
 		$this->layout = 'ajax';
 		$this->loadModel('SubCategory');
@@ -397,6 +459,9 @@ class BannersController extends AppController {
 	
 	public function mybanners()
     {
+
+
+    	$this->check_status();
 		$this->layout = 'index';
 		$this->loadModel('Banner');	
 		$loggedUserId	= $this->Auth->user('id');
@@ -408,9 +473,10 @@ class BannersController extends AppController {
 		$occId = '';
 		$SpecialDayId = '';
 		$FestivalId = '';
+		$expired = false;
+			
 		
-		
-		
+
 		$args = $this->params['url']; 
 		unset($args['url']); 
 		
