@@ -27732,3 +27732,136 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 #1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-07-04 14:30:25 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:01:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:01:09 Error: [MissingActionException] Action CustomersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:01:11 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:01:11 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:01:14 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:25:00 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:29:31 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:29:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:29:35 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:29:45 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:29:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /var/www/kevin/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /var/www/kevin/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('UPDATE `quesfor...', Array)
+#2 /var/www/kevin/lib/Cake/Model/Datasource/Database/Mysql.php(376): DboSource->execute('UPDATE `quesfor...')
+#3 /var/www/kevin/lib/Cake/Model/Model.php(1690): Mysql->update(Object(Banner), Array, Array)
+#4 /var/www/kevin/app/Controller/BannersController.php(691): Model->save(Array)
+#5 [internal function]: BannersController->upload('56')
+#6 /var/www/kevin/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(BannersController), Array)
+#7 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-04 15:29:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:29:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:30:08 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:30:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:30:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:30:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:31:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:31:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:31:26 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:31:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:31:36 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:31:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:31:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:32:03 Error: [MissingPluginException] Plugin  could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(278): CakePlugin::path('')
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->asset('/img/closelabel...', Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:32:03 Error: [MissingPluginException] Plugin  could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(278): CakePlugin::path('')
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->asset('/img/loading.gi...', Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:32:16 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:32:17 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:32:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:32:22 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-04 15:32:22 Error: [MissingActionException] Action BannersController::js() could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(BannersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:33:44 Error: [MissingPluginException] Plugin  could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(278): CakePlugin::path('')
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->asset('/img/closelabel...', Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-04 15:33:44 Error: [MissingPluginException] Plugin  could not be found.
+#0 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(278): CakePlugin::path('')
+#1 /var/www/kevin/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->asset('/img/loading.gi...', Object(CakeResponse))
+#2 /var/www/kevin/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

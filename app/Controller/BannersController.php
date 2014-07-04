@@ -737,7 +737,7 @@ class BannersController extends AppController {
 				}
 				
 
-				if($this->request->data['Banner']['template_banner']==1){
+				if($this->request->data['Banner']['template_banner'] == 1){
 					$this->request->data['Banner']['template_image'] = $this->request->data['Banner']['image']; 
 				}
 

@@ -42,7 +42,7 @@
 
 
 
-App::uses('Controller', 'Controller');
+App::uses('DboSource','Controller', 'Controller');
 
 
 
