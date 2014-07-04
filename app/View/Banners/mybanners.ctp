@@ -46,8 +46,22 @@
 			 }
 			 </script>
 					<?php foreach($Banners as $Banner){?>
-					<?php if($Banner['Banner']['is_premium'] == 0 and (time() - strtotime($Banner['Banner']['created']) <= 5*24*60*60)){ ?>
-					<?php echo (time() - strtotime($Banner['Banner']['created'])) ?>
+					<?php if ($Banner['Banner']['is_premium'] == 0) { ?>
+					<?php if (time() - strtotime($Banner['Banner']['created']) > 5*24*60*60) { ?>
+					<?php echo "Please make the banner live by editing the banner" ?>
+					<?php } ?>
+					<!--
+					<?php if (time() - strtotime($Banner['Banner']['created']) > 5*24*60*60) { ?>
+					 <td> Premium Status: </td>
+					 <td> <?php $this->Form->create('Banner') ?>
+					 <?php $options = array("1" => "Active" , "0" => "Non-Active");
+					 echo $this->Form->input('status', array('type' => 'select', 'label' => '', 'options' => $options, 'class' => 'combo2 curve1')); ?>
+					 <?php $options_one = array('label' => 'Update Status', 'class' => 'curve2 button1'); 
+					 echo $this->Form->end($options_one); ?>
+					 <?php } ?>
+
+					-->
+					</td>
 					 <div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
@@ -88,7 +102,7 @@
 									<?php echo $this->Html->link(__('Edit'), array('action' => 'upload', $Banner['Banner']['id'])); ?>  
 					|
 									<?php echo $this->Form->postLink(__('Remove'), array('action' => 'delete', $Banner['Banner']['id']), null, __('Are you sure you want to delete # %s?', $Banner['Banner']['title'])); ?>
-					
+									<?php ?>
 									</span>
 							   
 							  </li>

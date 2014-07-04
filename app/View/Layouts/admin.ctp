@@ -156,7 +156,11 @@
 				 <li class="menuitem">
 					<?php echo $this->Html->link('Review the pending requests',array('controller' => 'banners', 'action' => 'pending_requests'),array('class'=>'menulink products'));?>
 					  
-                </li> 
+                </li>
+                 <li class="menuitem">
+                    <?php echo $this->Html->link('Review the Premium Ads',array('controller' => 'banners', 'action' => 'premium_ads'),array('class'=>'menulink products'));?>
+                      
+                </li>
 				<li class="menuitem">
 					<?php echo $this->Html->link('Banner Templates',array('controller' => 'template_banners', 'action' => 'index'),array('class'=>'menulink products'));?>
 					 <div class="toggler">
