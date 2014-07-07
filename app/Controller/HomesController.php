@@ -114,9 +114,13 @@ class HomesController extends AppController
 		//$data = $this->Banner->find("all", array('conditions'=>$condition,'offset'=>0, 'limit'=>10));
 		//$total = $this->Banner->find("count", array('conditions'=>$condition));			
 		$this->Banner->recursive = 2;
+		//$this->paginate = array(
+		//'limit' => 10,
+		// );
 		$this->paginate = array(
-		'limit' => 10,
-		 );
+		    'limit' => 10,
+		    'order' => array('id' => 'DESC'),
+		     );
 		$data = $this->paginate('Banner', $condition);
 		
 		

@@ -90,11 +90,16 @@ class BannersController extends AppController {
 		}
 	 	$condition[]    = "(Banner.status = '1')";	
 		$this->Banner->recursive = 1;
+		$this->paginate = array(
+		    'conditions' => array('Banner.status' => 1),
+		    'limit' => 20,
+		    'order' => array('id' => 'DESC'),
+		     );
 		$data = $this->paginate('Banner', $condition);
-		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
+		//$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
 		
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data_sorted);
+		$this->set('Banners', $data);
 		
 		
 		
@@ -133,12 +138,18 @@ class BannersController extends AppController {
 		}
 		$condition[]    = "(Banner.is_premium = '1')";	
 		$this->Banner->recursive = 1;
-		$data = $this->paginate('Banner', $condition);
-		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
-		
+		$this->paginate = array(
+		    'conditions' => array('Banner.is_premium' => 1),
+		    'limit' => 20,
+		    'order' => array('id' => 'DESC'),
+		     );
 
+		$data = $this->paginate('Banner', $condition);
+		//$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
+		
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data_sorted);
+		$this->set('Banners', $data);
+
 		
 		
 		
@@ -174,14 +185,20 @@ class BannersController extends AppController {
 			$condition[]    = "(Banner.status = '".$searchCriteriaTerm."')";		
 			$savecrit = "filter_status:".$value_explode[1];
 		}
-		$condition[]    = "(Banner.status = '0')";	
+		$condition[]    = "(Banner.status = '0')";
+		$this->paginate = array(
+		    'conditions' => array('Banner.status' => 0),
+		    'limit' => 20,
+		    'order' => array('id' => 'DESC'),
+		     );
+	
 		$this->Banner->recursive = 1;
 		$data = $this->paginate('Banner', $condition);
-		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
+		//$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
 		
 
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data_sorted);
+		$this->set('Banners', $data);
 		
 		
 		
@@ -242,14 +259,16 @@ class BannersController extends AppController {
 */
 
    protected function check_status(){
+   	 $non_premium_expire = 5*24*60*60;
+   	 $premium_expire = 14*24*60*60;
    	 $data = $this->Banner->find('all');
    	 foreach ($data as $Banners) {
    	 	if ($Banners['Banner']['is_premium'] == 0) {
-   	 		if ((time() - strtotime($Banners['Banner']['created'])) > 5*24*60*60) {
+   	 		if ((time() - strtotime($Banners['Banner']['created'])) > $non_premium_expire ||  (time() - strtotime($Banners['Banner']['modified'])) > $non_premium_expire) {
    	 			$this->Banner->set('status', 0);
    	 		}
    	 	else if ($Banners['Banner']['is_premium'] == 1) {
-   	 		if ((time() - strtotime($Banners['Banner']['created'])) > 14*24*60*60) {
+   	 		if ((time() - strtotime($Banners['Banner']['created'])) > $premium_expire || (time()- strtotime($Banner['Banner']['modified'])) > $premium_expire) {
    	 			$this->Banner->set('status', 0);
    	 		}
    	 	}
@@ -567,15 +586,18 @@ class BannersController extends AppController {
 		 
 	  
 		$this->Banner->recursive = 2;
+		
 		$this->paginate = array(
-		'limit' => 20,
-		 );
+		    'conditions' => array('Banner.customer_id' => $loggedUserId),
+		    'limit' => 20,
+		    'order' => array('id' => 'DESC'),
+		     );
 		$data = $this->paginate('Banner', $condition);
-		$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));		
+		//$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));		
 		
 		$this->set('loggedInUserId', $loggedUserId);
 		$this->set('savecrit', $savecrit);
-		$this->set('Banners', $data_sorted);
+		$this->set('Banners', $data);
     }
 	
 	
@@ -625,6 +647,7 @@ class BannersController extends AppController {
 					$this->request->data['Banner']['image'] = $coverPhoto1; 
 					$this->request->data['Banner']['image1'] = $coverPhoto2;
 					$this->request->data['Banner']['image2'] = $coverPhoto3;
+					//$this->request->data['Banner']['status'] = 0;
 					
 					/*if($imageactualSize[0] > 295 && $imageactualSize[1] > 205){
 						if($ext1 == 'png'){
@@ -673,12 +696,14 @@ class BannersController extends AppController {
 					//$this->request->data['Banner']['image1'] = null;
 					//$this->request->data['Banner']['image2'] = null;
 					$this->request->data['Banner']['image']=$BannerDetail['Banner']['image'];
+					//$this->request->data['Banner']['status'] = 0;
 					
 				}
 			}else{
 				$this->request->data['Banner']['image'] = $this->data['Banner']['template_image'];
 				$this->request->data['Banner']['image1'] = null;
 				$this->request->data['Banner']['image2'] = null;
+				//$this->request->data['Banner']['status'] = 0;
 
 			}
 			
@@ -736,18 +761,21 @@ class BannersController extends AppController {
 
 				}
 				
+				//pr($this->request->data);
+				//pr($status_encoded);
+				//die;
 
 				if($this->request->data['Banner']['template_banner'] == 1){
 					$this->request->data['Banner']['template_image'] = $this->request->data['Banner']['image']; 
 				}
 
+				
 
-				if ($this->Banner->save($this->request->data)){
-				if ($this->request->data['Banner']['status'] == 1) {
-					$this->Banner->set('created', DboSource::expression('NOW()'));
-				}
-				}
-			}
+				//pr($this->request->data);
+				//pr($status_encoded);
+				//die;
+
+			
 			
 		}
 		$this->set('status_encoded', $status_encoded);
@@ -774,6 +802,7 @@ class BannersController extends AppController {
 		// implementing the premium functionality
 		 
 	}
+}
 	
 	public function flag_banner() {
 		$this->loadModel('FlaggedBanner');

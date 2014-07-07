@@ -148,8 +148,8 @@
 			<td>Premium Status:</td>
 			<td>
 			<?php
-				$options=array('0'=>'Premium','1'=>'Non-Premium');
-				echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options, 'class' => 'combo2 curve1')); 
+				$options_one =array('0'=>'Non-Premium','1'=>'Premium');
+				echo $this->Form->input('is_premium',array('type'=>'select','label' => '', 'options' => $options_one, 'class' => 'combo2 curve1')); 
 			?>
 			</td>
 		</tr>

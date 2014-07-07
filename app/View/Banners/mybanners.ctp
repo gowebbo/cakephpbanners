@@ -47,26 +47,25 @@
 			 </script>
 					<?php foreach($Banners as $Banner){?>
 					<?php if ($Banner['Banner']['is_premium'] == 0) { ?>
-					<?php if (time() - strtotime($Banner['Banner']['created']) > 5*24*60*60) { ?>
-					<?php echo "Please make the banner live by editing the banner" ?>
+					<?php if (time() - strtotime($Banner['Banner']['modified']) > 5*24*60*60) { ?>
+					<?php echo "                Please make the banner live by editing the banner" ?>
 					<?php } ?>
-					<!--
-					<?php if (time() - strtotime($Banner['Banner']['created']) > 5*24*60*60) { ?>
-					 <td> Premium Status: </td>
-					 <td> <?php $this->Form->create('Banner') ?>
-					 <?php $options = array("1" => "Active" , "0" => "Non-Active");
-					 echo $this->Form->input('status', array('type' => 'select', 'label' => '', 'options' => $options, 'class' => 'combo2 curve1')); ?>
-					 <?php $options_one = array('label' => 'Update Status', 'class' => 'curve2 button1'); 
-					 echo $this->Form->end($options_one); ?>
-					 <?php } ?>
-
-					-->
-					</td>
 					 <div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
 							<div class="left-img">
 								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
+								<?php if ($Banner['Banner']['status'] == 0) { ?>
+									<li class="fl_pen"><span class="fl_pen"> Pending Review</span></li>
+								<?php } ?>
+								<?php if ($Banner['Banner']['status'] == 1) { ?>
+									<li class="fl_app" ><span > Approved </span></li>
+								<?php } ?>
+								<!-- 
+								<?php if ($Banner['Banner']['pause'] == 0) { ?>
+									<li><span class="fl-sus" >Suspended </span></li>
+								<?php } ?>
+							-->
 							</div>
 							<div class="right-cont">
 								<a href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><h6 class="h1"><?php echo $this->Text->truncate($Banner['Banner']['title'], 20, array('ending' => ''))?></h6> </a>
@@ -132,8 +131,8 @@
 						</div>
 
 					</div> 
-					<?php }else if (time() - strtotime($Banner['Banner']['created']) <= 14*24*60*60){?>
-						<?php echo (time() - strtotime($Banner['Banner']['created'])) ?>
+					<?php }else if (time() - strtotime($Banner['Banner']['modified']) <= 14*24*60*60){?>
+						<!-- <?php //echo (time() - strtotime($Banner['Banner']['created'])) ?> -->
 						<div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">

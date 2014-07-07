@@ -75,8 +75,25 @@
 										 
 									?>
 									<li>
-									  <br />
-									  </li>
+			  <?php if($flaggedByUser == 'No'){?>
+					<span style="cursor:pointer;" class="fl" onclick="openFlagDiv('<?php echo $Banner['Banner']['id']?>');"> Flag this banner </span>
+					<?php echo $this->Form->create('Banner',array('controllers'=>'banners','action'=>'flag_banner','id'=>'form_'.$Banner['Banner']['id'])); ?>
+					<?php echo $this->Form->input('banner_id', array('value'=>$Banner['Banner']['id'],'type'=>'hidden')); ?>
+					
+					<div  style="margin-left:10px;display:none;" id="div_<?php echo $Banner['Banner']['id']?>">
+						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;Miscategorized
+						<br>
+						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;misleading 
+						<br>
+						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;in violation
+						<br>
+						<div class="submit"><br><input type="submit" value="Submit" class="btn btn-primary"></div>
+					</div>
+					</form> 
+			  <?php }else{?>
+					<span class="fl">You Flagged This Banner</span>
+			  <?php }?>
+			  </li>
 									<li style="color: #888888; font-family: OpenSansRegular; font-size: 13px;line-height: 30px;list-style: none outside none;}">
 									<?php 
 										 
@@ -148,7 +165,25 @@
 										 
 									?>
 									<li>
-									  <br />
+							
+			  <?php if($flaggedByUser == 'No'){?>
+					<span style="cursor:pointer;" class="fl" onclick="openFlagDiv('<?php echo $Banner['Banner']['id']?>');"> Flag this banner </span>
+					<?php echo $this->Form->create('Banner',array('controllers'=>'banners','action'=>'flag_banner','id'=>'form_'.$Banner['Banner']['id'])); ?>
+					<?php echo $this->Form->input('banner_id', array('value'=>$Banner['Banner']['id'],'type'=>'hidden')); ?>
+					
+					<div  style="margin-left:10px;display:none;" id="div_<?php echo $Banner['Banner']['id']?>">
+						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;Miscategorized
+						<br>
+						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;misleading 
+						<br>
+						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;in violation
+						<br>
+						<div class="submit"><br><input type="submit" value="Submit" class="btn btn-primary"></div>
+					</div>
+					</form> 
+			  <?php }else{?>
+					<span class="fl">You Flagged This Banner</span>
+			  <?php }?>
 									  </li>
 									<li style="color: #888888; font-family: OpenSansRegular; font-size: 13px;line-height: 30px;list-style: none outside none;}">
 									<?php 
