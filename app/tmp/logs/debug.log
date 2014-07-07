@@ -57855,3 +57855,74 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 [main] - APP/webroot/index.php, line 96
 
+2014-07-07 15:00:37 Notice: Notice (8): Undefined index: Banner in [/var/www/kevin/app/View/Banners/upload.ctp, line 282]
+Trace:
+include - APP/View/Banners/upload.ctp, line 282
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-07 15:00:39 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-07 15:30:11 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-07 15:30:11 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-07 15:32:42 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2014-07-07 15:36:50 Notice: Notice (8): Undefined variable: Banners in [/var/www/kevin/app/View/Layouts/index.ctp, line 342]
+Trace:
+include - APP/View/Layouts/index.ctp, line 342
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::renderLayout() - CORE/Cake/View/View.php, line 527
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 962
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+

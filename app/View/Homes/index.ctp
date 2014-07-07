@@ -81,11 +81,11 @@
 					<?php echo $this->Form->input('banner_id', array('value'=>$Banner['Banner']['id'],'type'=>'hidden')); ?>
 					
 					<div  style="margin-left:10px;display:none;" id="div_<?php echo $Banner['Banner']['id']?>">
-						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;Miscategorized
+						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;<font color="black">Miscategorized</font>
 						<br>
-						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;misleading 
+						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;<font color="black">misleading </font>
 						<br>
-						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;in violation
+						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;<font color="black">in violation</font>
 						<br>
 						<div class="submit"><br><input type="submit" value="Submit" class="btn btn-primary"></div>
 					</div>
@@ -143,7 +143,7 @@
 						<div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
-							<div class ="prem">
+							<div class ="blue_banner">
 							</div>
 							<div class="left-img">
 								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
@@ -172,11 +172,11 @@
 					<?php echo $this->Form->input('banner_id', array('value'=>$Banner['Banner']['id'],'type'=>'hidden')); ?>
 					
 					<div  style="margin-left:10px;display:none;" id="div_<?php echo $Banner['Banner']['id']?>">
-						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;Miscategorized
+						<input type="radio" value="Miscategorized " name="data[FlaggedBanner][description]">&nbsp;<font color="black">Miscategorized</font>
 						<br>
-						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;misleading 
+						<input type="radio" value="misleading " name="data[FlaggedBanner][description]">&nbsp;<font color="black">misleading </font>
 						<br>
-						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;in violation
+						<input type="radio" value="in violation" name="data[FlaggedBanner][description]">&nbsp;<font color="black">in violation</font>
 						<br>
 						<div class="submit"><br><input type="submit" value="Submit" class="btn btn-primary"></div>
 					</div>

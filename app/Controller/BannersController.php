@@ -15,7 +15,8 @@ class BannersController extends AppController {
     function beforeFilter()
     {
 		parent::beforeFilter();
-		$this->Auth->allow('view','index');		
+		$this->Auth->allow('view','index');
+		//$this->check_status();		
 	    
         // commented by wpc
 		//$this->set('base_url','http://'.$_SERVER['SERVER_NAME'].Router::url('/'));
@@ -262,19 +263,21 @@ class BannersController extends AppController {
    	 $non_premium_expire = 5*24*60*60;
    	 $premium_expire = 14*24*60*60;
    	 $data = $this->Banner->find('all');
-   	 foreach ($data as $Banners) {
-   	 	if ($Banners['Banner']['is_premium'] == 0) {
-   	 		if ((time() - strtotime($Banners['Banner']['created'])) > $non_premium_expire ||  (time() - strtotime($Banners['Banner']['modified'])) > $non_premium_expire) {
-   	 			$this->Banner->set('status', 0);
-   	 		}
-   	 	else if ($Banners['Banner']['is_premium'] == 1) {
-   	 		if ((time() - strtotime($Banners['Banner']['created'])) > $premium_expire || (time()- strtotime($Banner['Banner']['modified'])) > $premium_expire) {
-   	 			$this->Banner->set('status', 0);
-   	 		}
-   	 	}
-   	 	} 
+  	 foreach ($data as $Banners) {
+     	 	if ($Banners['Banner']['is_premium'] == 0) {
+     	 		if ((time() - strtotime($Banners['Banner']['created'])) > 5*24*60*60) {
+    	 			 $this->Banner->id = $Banners['Banner']['id'];
+    	 			 $this->Banner->saveField('status',0);
+     	 		}
+     	 	else if ($Banners['Banner']['is_premium'] == 1) {
+     	 		if ((time() - strtotime($Banners['Banner']['created'])) > 14*24*60*60) {
+    	 			$this->Banner->id = $Banners['Banner']['id'];
+    	 			$this->Banner->saveField('status',0);
+     	 		}
+     	 	}
    	 }
    }
+}
 
 
 /**

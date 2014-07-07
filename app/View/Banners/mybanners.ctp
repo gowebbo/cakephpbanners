@@ -47,13 +47,18 @@
 			 </script>
 					<?php foreach($Banners as $Banner){?>
 					<?php if ($Banner['Banner']['is_premium'] == 0) { ?>
-					<?php if (time() - strtotime($Banner['Banner']['modified']) > 5*24*60*60) { ?>
-					<?php echo "                Please make the banner live by editing the banner" ?>
-					<?php } ?>
+					
 					 <div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
 							<div class="left-img">
+								<?php if (time() - strtotime($Banner['Banner']['modified']) > 5*24*60*60) { ?>
+								
+								<div class ="red_banner">
+								</div>
+					
+								<?php } ?>
+								
 								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
 								<?php if ($Banner['Banner']['status'] == 0) { ?>
 									<li class="fl_pen"><span class="fl_pen"> Pending Review</span></li>
@@ -136,7 +141,7 @@
 						<div class="post">
 						<h6 class="dd"><?php echo strtoupper($Banner['SubCategory']['name'])?></h6>
 						<div  class="meta-box">
-							<div class ="prem">
+							<div class ="blue_banner">
 							</div>
 							<div class="left-img">
 								<a   href="<?php echo $base_url?>banners/view/<?php echo $Banner['Banner']['id'] ?>"><img src="<?php echo $base_url.'timthumb.php?src='.$base_url.'/files/gallery/'.$Banner['Banner']['image'].'&w=286&h=192'?>"></a>
