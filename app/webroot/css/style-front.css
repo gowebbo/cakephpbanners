@@ -7526,37 +7526,37 @@ padding-right: 1px;
 }
 
 .left-img_thumbnail{
-position:relative;
-	width: 100%;float:left;
-    width:100px;
-    height:80px;
-    left:0px;
-    top:0px;
-    border:1px solid green;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-    /* Apply a CSS3 Transition to width, height, top and left properties */
-    transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -o-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -moz-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	position: relative;
+	width: 100%;
+	float: left;
+	width: 100px;
+	height: 67px;
+	left: 0px;
+	top: 0px;
+	border: 5px solid green;
+	padding: 0px 0px 0px 0px;
+	margin: 6px 5px 6px 5px;
+	transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-o-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-moz-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
 }
 
 .right-img_thumbnail{
-position:relative;
-	width : 100%; float:right;
-    width:100px;
-    height:80px;
-    left:0px;
-    top: 0px;
-    border:1px solid green;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-    /* Apply a CSS3 Transition to width, height, top and left properties */
-    transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -o-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
-    -moz-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	position: relative;
+	width: 100%;
+	float: left;
+	width: 100px;
+	height: 67px;
+	left: 0px;
+	top: 0px;
+	border: 5px solid green;
+	padding: 0px 0px 0px 0px;
+	margin: 6px 5px 6px 5px;
+	transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-o-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+	-moz-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
     
 }
 
@@ -7564,15 +7564,15 @@ position:relative;
 .left-img_thumbnail:hover
 {
     width: 280px;
-    height: 200px;
-    left: 0px;
-    top: 0px;
-    z-index:9999;
+	height: 188px;
+	left: 0px;
+	top: 0px;
+	z-index: 9999;
 }
 
 .right-img_thumbnail:hover {
 	width: 280px;
-    height: 200px;
+    height: 188px;
     left: 0px;
     top: 0px;
     z-index:9999;

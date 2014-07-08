@@ -43,7 +43,8 @@ $this->Paginator->options(array(
 	<?php
 
 	  
-		echo $this->Form->input('filter_status', array('type' => 'select', 'label' => '', 'options' => array('all' => 'Select Status', 'premium' => 'Premium', 'non-premium' => 'Non-Premium'), 'class' => 'combo2 curve1','div'=>false)); ?>
+		echo $this->Form->input('filter_status', array('type' => 'select', 'label' => '', 'options' => array('all' => 'Select Status', 
+								'premium' => 'Premium', 'non-premium' => 'Non-Premium'), 'class' => 'combo2 curve1','div'=>false)); ?>
 		&nbsp;
 		<?php
 		//echo $this->Form->end(array('label'=>'Filter','class'=> 'curve3 button2','div'=>false));

@@ -25,32 +25,58 @@ class BannersController extends AppController {
 
 
 
-// Implementing the function to check for premium and non-premium banners
 
 /**
-* calculating the time elasped 
-* @return bool 
-*/
-
-	protected function checktime($id = null){
-		$data = $this->Banner->findbyId('$id');
-		$value = false;
-		$time = strtotime($this->$data['Banner']['created']);
-		if ($this->data['banner']['is_premium'] == 0) {
-			if ($time - time() < 5*24*60*60) {
-				$value = true;
+ * index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$condition = array();
+		$savecrit = '';
+		
+		if(!empty($this->data['Banner']['search_value']) && $this->data['Banner']['search_value']!='Banner title'){
+			$searchCriteriaTerm=trim($this->data['Banner']['search_value']);
+			$condition[]    = "(Banner.description like '%".$searchCriteriaTerm."%' || Banner.title like '%".$searchCriteriaTerm."%')";		
+			$savecrit = "search_value:".$searchCriteriaTerm;
+                }
+		
+		if(!empty($this->data['Banner']['filter_status']) && $this->data['Banner']['filter_status']!='all'){
+			if ($this->data['Banner']['filter_status'] == 'active') {
+                $filter = "1";
+            }elseif ($this->data['Banner']['filter_status'] == 'inactive') {
+				 $filter = "0";
 			}
-		} else if ($this->data['banner']['is_premium'] == 1) {
-			if ($time - time() < 14*24*60*60) {
-				$value = true;
+			$searchCriteriaTerm=trim($filter);
+			$condition[]    = "(Banner.status = '".$searchCriteriaTerm."')";		
+			$savecrit = "filter_status:".$this->data['Banner']['filter_status'];
+		}else if(!empty($this->params['pass'][0]) && $this->params['pass'][0]!='filter_status:all'){
+			$value_explode = explode(':',$this->params['pass'][0]);
+			if ($value_explode[1] == 'active') {
+                $filter = "1";
+            }elseif ($value_explode[1] == 'inactive') {
+				 $filter = "0";
 			}
+			$searchCriteriaTerm=trim($filter);
+			$condition[]    = "(Banner.status = '".$searchCriteriaTerm."')";		
+			$savecrit = "filter_status:".$value_explode[1];
 		}
+	 	$condition[]    = "(Banner.status = '1')";	
+		$this->Banner->recursive = 1;
+		$this->paginate = array(
+		    'conditions' => array('Banner.status' => 1),
+		    'limit' => 20,
+		    'order' => array('id' => 'DESC'),
+		     );
+		$data = $this->paginate('Banner', $condition);
+		//$data_sorted = $this->Banner->find('all',array('order'=>array("Banner.created DESC")));
+		
+		$this->set('savecrit', $savecrit);
+		$this->set('Banners', $data);
+		
+		
+		
 	}
-
-
-
-
-
 
 
 
@@ -59,7 +85,7 @@ class BannersController extends AppController {
  *
  * @return void
  */
-	public function admin_index() {
+	public function admin_daily_deals() {
 		$condition = array();
 		$savecrit = '';
 		
@@ -118,9 +144,9 @@ class BannersController extends AppController {
                 }
 		
 		if(!empty($this->data['Banner']['filter_status']) && $this->data['Banner']['filter_status']!='all'){
-			if ($this->data['Banner']['filter_status'] == 'active') {
+			if ($this->data['Banner']['filter_status'] == 'premium') {
                 $filter = "1";
-            }elseif ($this->data['Banner']['filter_status'] == 'inactive') {
+            }elseif ($this->data['Banner']['filter_status'] == 'non-premium') {
 				 $filter = "0";
 			}
 			$searchCriteriaTerm=trim($filter);
@@ -128,9 +154,9 @@ class BannersController extends AppController {
 			$savecrit = "filter_status:".$this->data['Banner']['filter_status'];
 		}else if(!empty($this->params['pass'][0]) && $this->params['pass'][0]!='filter_status:all'){
 			$value_explode = explode(':',$this->params['pass'][0]);
-			if ($value_explode[1] == 'active') {
+			if ($value_explode[1] == 'premium') {
                 $filter = "1";
-            }elseif ($value_explode[1] == 'inactive') {
+            }elseif ($value_explode[1] == 'non-premium') {
 				 $filter = "0";
 			}
 			$searchCriteriaTerm=trim($filter);
@@ -265,12 +291,12 @@ class BannersController extends AppController {
    	 $data = $this->Banner->find('all');
   	 foreach ($data as $Banners) {
      	 	if ($Banners['Banner']['is_premium'] == 0) {
-     	 		if ((time() - strtotime($Banners['Banner']['created'])) > 5*24*60*60) {
+     	 		if ((time() - strtotime($Banners['Banner']['modified'])) > 5*24*60*60) {
     	 			 $this->Banner->id = $Banners['Banner']['id'];
     	 			 $this->Banner->saveField('status',0);
      	 		}
      	 	else if ($Banners['Banner']['is_premium'] == 1) {
-     	 		if ((time() - strtotime($Banners['Banner']['created'])) > 14*24*60*60) {
+     	 		if ((time() - strtotime($Banners['Banner']['modified'])) > 14*24*60*60) {
     	 			$this->Banner->id = $Banners['Banner']['id'];
     	 			$this->Banner->saveField('status',0);
      	 		}

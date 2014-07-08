@@ -29,7 +29,7 @@
             echo $this->Html->css('ie.css');
     ?>
     <![endif]-->
-      <?php echo $this->Html->script('jquery-1.3.2.min'); ?>
+    <?php echo $this->Html->script('jquery-1.3.2.min'); ?>
     <?php echo $this->Html->script('admin_script'); ?>
 	<?php echo $this->Html->script('ckeditor/ckeditor.js');?>
 
@@ -156,6 +156,11 @@
 				 <li class="menuitem">
 					<?php echo $this->Html->link('Review the pending requests',array('controller' => 'banners', 'action' => 'pending_requests'),array('class'=>'menulink products'));?>
 					  
+                </li>
+
+                 <li class="menuitem">
+                    <?php echo $this->Html->link('Daily Deals Section',array('controller' => 'banners', 'action' => 'daily_deals'),array('class'=>'menulink products'));?>
+                      
                 </li>
                  <li class="menuitem">
                     <?php echo $this->Html->link('Review the Premium Ads',array('controller' => 'banners', 'action' => 'premium_ads'),array('class'=>'menulink products'));?>
